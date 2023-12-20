@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!--==========--- STYLE-SHEET ---==========-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--==========--- REMIX-ICON-CDN ---==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="display">
+    </div>
+    <div class="main__container">
+      <h2 class="title">Registration Form</h2>
+      <form class="form">
+        <div class="form__control">
+          <i class="ri-user-line user-icon"></i>
+          <input type="text" id="name" placeholder="Enter you name" />
+          <i class="ri-check-double-fill validation-icon-1"></i>
+          <i class="ri-error-warning-line validation-icon-2"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form__control">
+          <i class="ri-mail-line user-icon"></i>
+          <input type="email" id="email" placeholder="Enter you email" />
+          <i class="ri-check-double-fill validation-icon-1"></i>
+          <i class="ri-error-warning-line validation-icon-2"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form__control">
+          <i class="ri-phone-line user-icon"></i>
+          <input type="number" id="phone" placeholder="Enter you number" />
+          <i class="ri-check-double-fill validation-icon-1"></i>
+          <i class="ri-error-warning-line validation-icon-2"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form__control">
+          <i class="ri-lock-2-line user-icon"></i>
+          <input type="password" id="password" placeholder="Create a password" />
+          <i class="ri-check-double-fill validation-icon-1"></i>
+          <i class="ri-error-warning-line validation-icon-2"></i>
+          <small>Error Msg</small>
+        </div>
+        <div class="form__control">
+          <i class="ri-lock-2-line user-icon"></i>
+          <input type="password" id="cpassword" placeholder="Confirm a password" />
+          <i class="ri-check-double-fill validation-icon-1"></i>
+          <i class="ri-error-warning-line validation-icon-2"></i>
+          <small>Error Msg</small>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+
+
+    <!--==========--- JAVA-SCRIPT ---==========-->
+    <script src="script.js"></script>
+  </body>
+</html>
