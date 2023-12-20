@@ -86,9 +86,13 @@ function validate() {
     isSuccess(cpassword)
   ) {
     // If all validations pass, show the 'Welcome' alert
-    const display = document.querySelector('.display')
-    display.style.scale = 1
-    display.innerHTML = `Welcome ${username.value}`
+    Swal.fire({
+      position: "center-center",
+      icon: "success",
+      title: `Welcome ${username.value}`,
+      showConfirmButton: true,
+      timer: 10000
+    });
   }
 }
 
