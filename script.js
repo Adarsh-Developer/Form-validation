@@ -98,6 +98,10 @@ function errorMsg(input, message) {
   small.innerText = message;
   formControl.classList.remove("success");
   formControl.classList.add("error");
+  formControl.style.animation = 'error 0.4s ease'
+  setTimeout(() => {
+  formControl.style.animation = 'none'
+  }, 500);
 }
 
 function successMsg(input) {
